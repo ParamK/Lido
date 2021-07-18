@@ -880,12 +880,17 @@ p {
   color: #339ac1;
 }
 
+.address-phone .first-address::before {
+  display: none;
+}
+
 .address-phone .address-section::before {
   width: 50%;
   height: 1px;
   content: "";
   position: absolute;
-  background-color: red;
+  background-color: #707070;
+  opacity: 21%;
   transform: translateX(-10%);
 }
 
@@ -900,5 +905,9 @@ p {
   .address-section::before {
     display: none;
   }
+}
+
+.news-detail-banner .trilogy-content {
+  max-width: unset;
 }
 /*# sourceMappingURL=style.css.map */

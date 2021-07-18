@@ -828,12 +828,16 @@ p {
             color: #339ac1;
         }
     }
+    .first-address::before{
+display: none;
+    }
     .address-section::before {
         width: 50%;
         height: 1px;
         content: "";
         position: absolute;
-        background-color: red;
+        background-color: #707070;
+        opacity: 21%;
         transform: translateX(-10%);
     }
 }
@@ -847,5 +851,13 @@ p {
 @media (max-width: 1200px) {
     .address-section::before {
         display: none;
+    }
+}
+
+
+//NEWS DETAIL PAGE
+.news-detail-banner{
+    .trilogy-content{
+        max-width: unset;
     }
 }
