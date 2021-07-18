@@ -738,3 +738,114 @@ p {
     transform: translateX(-50%);
     opacity: 20%;
 }
+
+//CONTACT PAGE
+.contact-page-form {
+    .row {
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 3rem;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    .help {
+        span {
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+            margin-left: 1rem;
+        }
+    }
+
+    .form-control {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+@media (max-width: 992px){
+    .contact-page-form{ 
+         padding: 2rem 0;
+    }
+  }
+@media (max-width: 768px){
+  .contact-page-form{ 
+       padding: 2rem 0;
+  }
+}
+@media (max-width: 576px) {
+    .contact-page-form {
+        text-align: center;
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .help {
+        text-align: left;
+    }
+}
+
+//Address Phone
+.address-phone {
+    padding: 3rem 0;
+    .row {
+        justify-content: space-between;
+    }
+    span {
+        font-size: 20px;
+        font-family: "Nunito", sans-serif;
+        color: #999999;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    .phone-no {
+        font-size: 16px;
+        color: #339ac1;
+        font-weight: 800;
+    }
+    p {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .address-section,
+    .phone-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .address-section {
+        #blue-az {
+            color: #339ac1;
+        }
+    }
+    .address-section::before {
+        width: 50%;
+        height: 1px;
+        content: "";
+        position: absolute;
+        background-color: red;
+        transform: translateX(-10%);
+    }
+}
+
+@media (max-width: 992px) {
+    .address-phone .address-section,
+    .address-phone .phone-section {
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .address-section::before {
+        display: none;
+    }
+}
