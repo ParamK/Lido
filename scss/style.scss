@@ -771,15 +771,15 @@ p {
         box-shadow: none;
     }
 }
-@media (max-width: 992px){
-    .contact-page-form{ 
-         padding: 2rem 0;
+@media (max-width: 992px) {
+    .contact-page-form {
+        padding: 2rem 0;
     }
-  }
-@media (max-width: 768px){
-  .contact-page-form{ 
-       padding: 2rem 0;
-  }
+}
+@media (max-width: 768px) {
+    .contact-page-form {
+        padding: 2rem 0;
+    }
 }
 @media (max-width: 576px) {
     .contact-page-form {
@@ -828,8 +828,8 @@ p {
             color: #339ac1;
         }
     }
-    .first-address::before{
-display: none;
+    .first-address::before {
+        display: none;
     }
     .address-section::before {
         width: 50%;
@@ -854,10 +854,80 @@ display: none;
     }
 }
 
-
 //NEWS DETAIL PAGE
-.news-detail-banner{
-    .trilogy-content{
-        max-width: unset;
+.container-fluid {
+    max-width: 920px;
+}
+.news-detail-banner {
+    padding: 3rem 0;
+    .trilogy-content {
+        max-width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .row {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+        padding: 1rem 0;
+        span {
+            margin-right: 1rem;
+        }
+    }
+}
+
+//article
+.news-article {
+    p {
+        line-height: 30px;
+        color: #515c64;
+    }
+    .about-lido {
+        margin: 4rem 0;
+        border-bottom: 1px solid #eeeeee;
+        h5 {
+            font-family: "Nunito", sans-serif;
+        }
+    }
+}
+
+//Virtual-Event
+.virtual-event-normal {
+    margin-bottom: 3rem;
+    p {
+        font-size: 24px;
+        padding: 0 1rem 0 0;
+        margin-top: 1rem;
+    }
+    .calendar-section {
+        margin: 1rem 0;
+        img {
+            width: unset;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .virtual-event-normal {
+        text-align: center;
+    }
+}
+@media (max-width: 992px) {
+    .virtual-event-normal {
+        img {
+            width: 85%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .virtual-event-normal {
+        p {
+            padding: 0 1rem;
+        }
     }
 }
