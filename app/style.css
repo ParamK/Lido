@@ -907,12 +907,12 @@ p {
   }
 }
 
-.container-fluid {
-  max-width: 920px;
-}
-
 .news-detail-banner {
   padding: 3rem 0;
+}
+
+.news-detail-banner .container-fluid {
+  max-width: 920px;
 }
 
 .news-detail-banner .trilogy-content {
@@ -988,5 +988,115 @@ p {
   .virtual-event-normal p {
     padding: 0 1rem;
   }
+}
+
+.grey-bg {
+  background-color: #DFE6EA;
+}
+
+.grey-bg .trilogy-content {
+  padding: 3rem 0;
+}
+
+.blue-banner {
+  background-color: #339AC1;
+  color: white;
+  padding: 3rem 0;
+}
+
+.blue-banner .trilogy-content {
+  margin-bottom: 3rem;
+}
+
+.blue-banner .row {
+  justify-content: space-around;
+}
+
+.white-bg {
+  background-color: white;
+  color: black;
+  padding: 3rem .5rem 0 .5rem;
+}
+
+.blue-img-heading {
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.blue-img-heading img {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .white-bg {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .white-bg p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .white-bg h3 {
+    font-size: 20px;
+  }
+  .white-bg p {
+    font-size: 14px;
+  }
+}
+
+#img-content-grp-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.accordion .accordion-item {
+  border-left: none;
+  border-right: none;
+}
+
+.accordion .accordion-button {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.accordion .accordion-button::after {
+  background-image: url(../docs/accordion.png);
+  background-color: #D6F1FF;
+  border-radius: 12px;
+}
+
+.accordion .accordion-button:focus {
+  color: #339AC1;
+  font-size: 18px;
+}
+
+#virtual-event-strong h3 {
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+#virtual-event-strong p {
+  font-size: 16px;
+}
+
+#virtual-event-strong img {
+  height: 300px;
+}
+
+#virtual-event-strong .calendar-section img {
+  height: unset;
+}
+
+#virtual-event-strong .investment-btn {
+  color: #339AC1;
+  background-color: #D6F1FF;
+  padding: 10px 14px;
+  border: none;
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Management</title>
+    <!--Links-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--Slick links-->
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick-theme.css" />
+    <!--Jquery Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--JS Link-->
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <section class="header-text">
+            Veritatis et quasi architecto beatae vitae dicta <strong><a href="#">sunt explicabo.</a></strong>
+        </section>
+        <a href="#">
+            <svg id="Group_1070" data-name="Group 1070" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path id="Path_17538" data-name="Path 17538" d="M0,0H24V24H0Z" fill="none" />
+                <line id="Line_427" data-name="Line 427" x1="12" y2="12" transform="translate(6 6)" fill="none"
+                    stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                <line id="Line_428" data-name="Line 428" x2="12" y2="12" transform="translate(6 6)" fill="none"
+                    stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+            </svg>
+        </a>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../docs/logo-new.png" alt="Logo" width="20" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            What we Do
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Who We Help
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="investment.html" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Who We Are
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news-detail.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Client</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item" id="search-item">
+                        <a class="nav-link" id="search-icon" href="#">
+                            <svg id="Group_547" data-name="Group 547" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path id="Path_16940" data-name="Path 16940" d="M0,0H24V24H0Z" fill="none" />
+                                <circle id="Ellipse_24" data-name="Ellipse 24" cx="7" cy="7" r="7"
+                                    transform="translate(3 3)" fill="none" stroke="#515c64" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="1.5" />
+                                <line id="Line_69" data-name="Line 69" x1="6" y1="6" transform="translate(15 15)"
+                                    fill="none" stroke="#515c64" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Grey Banner-->
+<section class="grey-bg">
+    <div class="container">
+        <div class="trilogy-content">
+            <h1>Investment Strategy</h1>
+            <p>We focus on consistent cash flow, volatility management, and long-term growth strategies. The result is an allocation program that can be opportunistic and risk aware when needed.</p>
+        </div>
+    </div>
+</section>
+
+<!--Image Banner with text-->
+<section class="img-content-grp">
+    <div class="container">
+        <div class="row">
+            <div class="image col-12 col-sm-12 col-md-12 col-lg-6">
+                <img src="../docs/investment-img1.png" alt="Private Opportunities">
+            </div>
+            <div class="content col-12 col-sm-12 col-md-12 col-lg-4">
+                <h1>Access to Unique Private Opportunities</h1>
+                <p>
+                    We offer our clients access to high-quality investment opportunities not available elsewhere.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra aliquet eget sit amet tellus. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Blue Banner-->
+<section class="blue-banner">
+    <div class="container">
+        <div class="trilogy-content">
+            <h1>Active Investment Management</h1>
+            <p>
+                We actively manage our clients’ investment. There’s no “set it and forget it” here. We also follow an A.C.T. approach to crafting client investment portfolios:
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 white-bg">
+                <div class="blue-img-heading mb-4">
+                    <img src="../docs/blue-banner-1.png" alt="Active Investment Management">
+                    <h3>A - Alternatives</h3>
+                </div>
+                <p>
+                    Sourcing investments that are not directly correlated to any one asset class.
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 white-bg">
+                <div class="blue-img-heading mb-4">
+                    <img src="../docs/blue-banner-1.png" alt="Active Investment Management">
+                    <h3>C-Core</h3>
+                </div>
+                <p>
+                    Qualitative and quantitative evaluation using various combinations of exchange traded funds, mutual funds and individual stocks. Top-down and bottom-up analysis pursuing alpha as compared to a benchmark.
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 white-bg">
+                <div class="blue-img-heading mb-4">
+                    <img src="../docs/blue-banner-1.png" alt="Active Investment Management">
+                    <h3>T - Tactical</h3>
+                </div>
+                <p>
+                    Seeking outliers from the Index. Economic cycles, market action and fundamental drivers may reveal opportunities that warrant investment consideration.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Image Banner with Text 2-->
+<section class="img-content-grp" id="img-content-grp-reverse">
+    <div class="container">
+        <div class="row">
+            <div class="image col-12 col-sm-12 col-md-12 col-lg-6">
+                <img src="../docs/investment-img1.png" alt="Private Opportunities">
+            </div>
+            <div class="content col-12 col-sm-12 col-md-12 col-lg-4">
+                <h1>R.O.I. Portfolio Analysis</h1>
+                <p>
+                    Amet venenatis urna cursus eget. Pulvinar into
+elementum integer enim neque volutpat
+                </p>
+                <!--Accordion-->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1. R- Risk
+                        </button>
+                    </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Amet venenatis cursus eget nunc. Pulvinar 
+                            elementum integer enim neque volpat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            
+                            2. O – Opportunity
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Amet venenatis cursus eget nunc. Pulvinar 
+                                elementum integer enim neque volpat.
+                              </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            
+                            3. I – Investment
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Amet venenatis cursus eget nunc. Pulvinar 
+                                elementum integer enim neque volpat.
+                              </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Virtual Event Strong-->
+<section class="virtual-event-normal" id="virtual-event-strong">
+    <div class="trilogy-content">
+        <h1>Investment Insights</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-4 mb-4">
+                <img src="../docs/virtual-event.png" alt="Virtual Event">
+                <button class="investment-btn">Investment</button>
+                <h3>
+                    Pellentesque habitant morbi tristique senectus et. Eget nullam non
+                </h3>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et. Eget nullam non nisi est sit amet facilisis. Dignissim suspendisse in est ante.
+                </p>
+                <div class="calendar-section">
+                    <img src="../docs/calendar.png" alt="Calendar">
+                    <span><small></small>12 May' 20</span>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 mb-4">
+                <img src="../docs/barron.png" alt="Barron’s Names">
+                <button class="investment-btn">Investment</button>
+                <h3>
+                    Pellentesque habitant morbi tristique senectus et. Eget nullam non
+                </h3>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et. Eget nullam non nisi est sit amet facilisis. Dignissim suspendisse in est ante.
+                </p>
+                <div class="calendar-section">
+                    <img src="../docs/calendar.png" alt="Calendar">
+                    <span><small></small>12 May' 20</span>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 mb-4">
+                <img src="../docs/lido-insights.png" alt="Lido Insights">
+                <button class="investment-btn">Investment</button>
+                <h3>
+                    Pellentesque habitant morbi tristique senectus et. Eget nullam non
+                </h3>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et. Eget nullam non nisi est sit amet facilisis. Dignissim suspendisse in est ante.
+                </p>
+                <div class="calendar-section">
+                    <img src="../docs/calendar.png" alt="Calendar">
+                    <span><small></small>12 May' 20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+ <!--Footer-->
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <a class="footer-logo" href="index.html">
+                    <img src="../docs/logo-new.png" alt="Logo" width="20" height="35">
+                </a>
+                <div class="footer-logo-text">
+                    <img src="../docs/location.png" alt="Location">
+                    <strong>HEADQUARTERS</strong>
+                    <p>
+                        1875 Century Park East
+
+                        Suite 950 <br>
+
+                        Los Angeles, CA 90067
+                    </p>
+                </div>
+                <div class="footer-logo-text">
+                    <img src="../docs/call-us.png" alt="Contact">800-604-LIDO
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-2">
+                <div class="quick-links">
+                    <span>Quick Links</span>
+                    <ul>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Who We Help</a></li>
+                        <li><a href="investment.html">Who We Are</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-2">
+                <div class="quick-links" id="quick-links-2">
+                    <ul>
+                        <li><a href="news-detail.html">News</a></li>
+                        <li><a href="#">Client</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="message-box">
+                    <span>Send Me Market Updates</span>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Email"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="send-btn" type="submit">Send</button>
+                    </div>
+                    <span>
+                        <a href="#"><img src="../docs/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="../docs/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="../docs/fb.png" alt="Facebook"></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <p>California | New York | Texas | Illinois | Washington | Maryland | Florida | Georgia | Arizona</p>
+            <span>&copy; Company 2021</span>
+        </div>
+    </div>
+</footer>
+    <!--Bootstrap Links-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!--Slick JS-->
+    <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>
