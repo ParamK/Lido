@@ -991,7 +991,7 @@ p {
 }
 
 .grey-bg {
-  background-color: #DFE6EA;
+  background-color: #dfe6ea;
 }
 
 .grey-bg .trilogy-content {
@@ -999,7 +999,7 @@ p {
 }
 
 .blue-banner {
-  background-color: #339AC1;
+  background-color: #339ac1;
   color: white;
   padding: 3rem 0;
 }
@@ -1015,7 +1015,7 @@ p {
 .white-bg {
   background-color: white;
   color: black;
-  padding: 3rem .5rem 0 .5rem;
+  padding: 3rem 0.5rem 0 0.5rem;
 }
 
 .blue-img-heading {
@@ -1066,12 +1066,12 @@ p {
 
 .accordion .accordion-button::after {
   background-image: url(../docs/accordion.png);
-  background-color: #D6F1FF;
+  background-color: #d6f1ff;
   border-radius: 12px;
 }
 
 .accordion .accordion-button:focus {
-  color: #339AC1;
+  color: #339ac1;
   font-size: 18px;
 }
 
@@ -1093,10 +1093,63 @@ p {
 }
 
 #virtual-event-strong .investment-btn {
-  color: #339AC1;
-  background-color: #D6F1FF;
+  color: #339ac1;
+  background-color: #d6f1ff;
   padding: 10px 14px;
   border: none;
   margin: 1rem 0;
+}
+
+.secondary-nav {
+  margin: 3rem 0;
+}
+
+.secondary-nav #search-input {
+  max-width: 290px;
+}
+
+.secondary-nav .nav-item {
+  margin: 0 1.5rem;
+}
+
+.secondary-nav .nav-item .nav-link {
+  color: #778891 !important;
+}
+
+.secondary-nav .nav-item .active {
+  color: #339ac1 !important;
+}
+
+.secondary-nav #nav-border {
+  border-bottom: 2px solid #dfe6ea;
+  padding: 1rem 0;
+}
+
+.virtual-event-insights h3 {
+  margin-top: 3rem;
+}
+
+.load-more {
+  color: white;
+  background-color: #339ac1;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 16px 32px;
+  border: none;
+}
+
+.load-more:hover {
+  opacity: 80%;
+}
+
+.load-more-btn {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #virtual-event-strong h1 {
+    margin-bottom: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

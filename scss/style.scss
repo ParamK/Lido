@@ -932,115 +932,167 @@ p {
         }
     }
 }
- //INVESTMENT PAGE
+//INVESTMENT PAGE
 //grey banner
- .grey-bg{
-     background-color: #DFE6EA;
-     .trilogy-content{
-         padding: 3rem 0;
-     }
- }
+.grey-bg {
+    background-color: #dfe6ea;
+    .trilogy-content {
+        padding: 3rem 0;
+    }
+}
 
- //Blue banner
- .blue-banner{
-     background-color: #339AC1;
-     color: white;
-     padding: 3rem 0;
-     .trilogy-content{
-         margin-bottom: 3rem;
-     }
-     .row{
-         justify-content: space-around;
-     }
- }
- .white-bg{
-     background-color: white;
-     color: black;
-     padding: 3rem .5rem 0 .5rem;
- }
- .blue-img-heading{
-     letter-spacing: 2px;
-     display: flex;
-     align-items: center;
-     img{
-         margin-right: 1rem;
-     }
- }
+//Blue banner
+.blue-banner {
+    background-color: #339ac1;
+    color: white;
+    padding: 3rem 0;
+    .trilogy-content {
+        margin-bottom: 3rem;
+    }
+    .row {
+        justify-content: space-around;
+    }
+}
+.white-bg {
+    background-color: white;
+    color: black;
+    padding: 3rem 0.5rem 0 0.5rem;
+}
+.blue-img-heading {
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 1rem;
+    }
+}
 
- @media(max-width:768px){
-    .white-bg{
+@media (max-width: 768px) {
+    .white-bg {
         text-align: center;
     }
- }
- @media(max-width:576px){
-     .white-bg{
-         p{
-             font-size: 12px;
-         }
-     }
- }
-
- @media only screen and (min-width: 992px) and (max-width: 1199px){
-.white-bg{
-    h3{
-        font-size: 20px;
-    }
-    p{
-        font-size: 14px;
+}
+@media (max-width: 576px) {
+    .white-bg {
+        p {
+            font-size: 12px;
+        }
     }
 }
- }
 
- //Image Banner with Text 2
- #img-content-grp-reverse{
-     .row{
-         flex-direction: row-reverse;
-     }
- }
- .accordion{
-     .accordion-item{
-         border-left: none;
-         border-right: none;
-         
-     }
-    .accordion-button{
-        font-family: "Nunito Sans", sans-serif;        
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .white-bg {
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+//Image Banner with Text 2
+#img-content-grp-reverse {
+    .row {
+        flex-direction: row-reverse;
+    }
+}
+.accordion {
+    .accordion-item {
+        border-left: none;
+        border-right: none;
+    }
+    .accordion-button {
+        font-family: "Nunito Sans", sans-serif;
         font-weight: 400;
         padding: 1rem 0;
-     }
-     .accordion-button::after{
+    }
+    .accordion-button::after {
         background-image: url(../docs/accordion.png);
-        background-color: #D6F1FF;
+        background-color: #d6f1ff;
         border-radius: 12px;
     }
-     .accordion-button:focus{
-         color: #339AC1;
-         font-size: 18px;
-     }
- }
-
- //Virtual Event Strong
- #virtual-event-strong{
-h3{
-    line-height: 36px;
-    letter-spacing: 1px;
-}
-p{
-    font-size: 16px;
-}
-img{
-    height: 300px;
-}
-.calendar-section{
-    img{
-        height: unset;
+    .accordion-button:focus {
+        color: #339ac1;
+        font-size: 18px;
     }
 }
-.investment-btn{
-    color: #339AC1;
-    background-color: #D6F1FF;
-    padding: 10px 14px;
-    border: none;
-    margin: 1rem 0;
+
+//Virtual Event Strong
+#virtual-event-strong {
+    h3 {
+        line-height: 36px;
+        letter-spacing: 1px;
+    }
+    p {
+        font-size: 16px;
+    }
+    img {
+        height: 300px;
+    }
+    .calendar-section {
+        img {
+            height: unset;
+        }
+    }
+    .investment-btn {
+        color: #339ac1;
+        background-color: #d6f1ff;
+        padding: 10px 14px;
+        border: none;
+        margin: 1rem 0;
+    }
 }
- }
+
+//NEWS AND INSIGHTS PAGE
+
+.secondary-nav {
+    margin: 3rem 0;
+    #search-input {
+        max-width: 290px;
+    }
+    .nav-item {
+        margin: 0 1.5rem;
+        .nav-link {
+            color: #778891 !important;
+        }
+        .active {
+            color: #339ac1 !important;
+        }
+    }
+    #nav-border {
+        border-bottom: 2px solid #dfe6ea;
+        padding: 1rem 0;
+    }
+}
+
+//Insights virtual event
+.virtual-event-insights {
+    h3 {
+        margin-top: 3rem;
+    }
+}
+
+.load-more {
+    color: white;
+    background-color: #339ac1;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 16px 32px;
+    border: none;
+}
+.load-more:hover {
+    opacity: 80%;
+}
+.load-more-btn {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #virtual-event-strong {
+        h1 {
+            margin-bottom: 3rem;
+        }
+    }
+}
